@@ -36,10 +36,10 @@ API Endpoint
   "cached": false,
   "results": [
     {
-      "name": "365 by Whole Foods Market, Organic Peanut Butter, 16 oz",
+      "name": "365 by Whole Foods Market, Organic Peanut Butter",
       "price": "$4.99",
       "vendor": "Whole Foods",
-      "link": "https://example.com/product/1",
+      "link": "https://www.google.com/shopping/product/5488843124821120299?gl=us",
       "weight": "16 oz"
     }
   ]
