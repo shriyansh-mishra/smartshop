@@ -6,8 +6,8 @@
 [![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-4.x-4E9A06)](https://www.crummy.com/software/BeautifulSoup/)
 [![lxml](https://img.shields.io/badge/lxml-6.x-0A0A0A)](https://lxml.de/)
 [![Code Style: Prettier](https://img.shields.io/badge/Code%20Style-Prettier-ff69b4?logo=prettier&logoColor=white)](https://prettier.io/)
-[![Repo size](https://img.shields.io/github/repo-size/OWNER/REPO)](https://github.com/OWNER/REPO)
-[![Postman](https://img.shields.io/badge/Postman-Open%20in%20Postman-orange?logo=postman&logoColor=white)](https://www.postman.com/collections/YOUR_COLLECTION_UID)
+[![Repo size](https://img.shields.io/github/repo-size/shriyansh-mishra/smartshop)](https://github.com/shriyansh-mishra/smartshop)
+[![Postman](https://img.shields.io/badge/Postman-Open%20in%20Postman-orange?logo=postman&logoColor=white)](https://blue-water-347559.postman.co/workspace/Student-expert-API~2d5343ae-3527-4ba7-8090-4a4fafe80bfa/collection/42614502-4caa142b-ce17-4fbd-b539-6acf3b76a92a?action=share&creator=42614502)
 
 Simple Django API that searches Google Shopping via SerpAPI (with HTML scraping fallback). Returns product name, price, vendor, link, and a best‑effort weight extracted from the title.
 
@@ -20,11 +20,10 @@ cd smartshop
 
 🔎 Sample queries and JSON output
 
-Success
+API Endpoint
 
-```text
-q=365 WholeFoods Peanut Butter
-```
+`https://smartshop-kzgm.onrender.com/api/search/?q=365+WholeFoods+Peanut+Butter
+`
 
 ```json
 {
@@ -58,12 +57,8 @@ Response (HTTP 400):
 }
 ```
 
-📬 Open in Postman
-
-- Direct link (replace with your public Postman collection link):
-  - https://www.postman.com/collections/YOUR_COLLECTION_UID
-- Or create a simple GET request to:
-  - `http://127.0.0.1:8000/api/search/?q=365%20WholeFoods%20Peanut%20Butter`
+- Create a simple GET request to:
+  - `https://smartshop-kzgm.onrender.com/api/search/?q=365+WholeFoods+Peanut+Butter`
 
 🤝 Contributing
 
@@ -78,5 +73,3 @@ Nice-to-have guidelines:
 - Avoid committing databases or secrets.
 
 Made with ❤️ [mishrashriyansh@outlook.com](mailto:mishrashriyansh@outlook.com)
-
-
