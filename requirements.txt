@@ -1,0 +1,8 @@
+django
+uvicorn
+aiohttp
+beautifulsoup4
+lxml
+django-redis
+aioredis
+python-dotenv
