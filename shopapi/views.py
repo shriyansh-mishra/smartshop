@@ -32,7 +32,7 @@ async def fetch_serpapi(query: str) -> List[Dict]:
         "q": query,
         "hl": "en",
         "gl": "us",
-        "api_key": SERPAPI_KEY.strip('"') if SERPAPI_KEY else None,  # remove quotes if present
+        "api_key": SERPAPI_KEY.strip('"') if SERPAPI_KEY else None,
     }
     async with aiohttp.ClientSession() as session:
         async with session.get(url, params=params, timeout=REQUEST_TIMEOUT) as resp:
