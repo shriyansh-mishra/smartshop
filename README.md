@@ -1,4 +1,4 @@
-Smart Shopper P1
+🛍️ Smart Shop API 
 
 [![Python](https://img.shields.io/badge/Python-3.12+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Django](https://img.shields.io/badge/Django-5.x-092E20?logo=django&logoColor=white)](https://www.djangoproject.com/)
@@ -11,37 +11,72 @@ Smart Shopper P1
 
 Simple Django API that searches Google Shopping via SerpAPI (with HTML scraping fallback). Returns product name, price, vendor, link, and a best‑effort weight extracted from the title.
 
-Clone
+⬇️ Clone
 
 ```bash
-git clone https://github.com/OWNER/REPO.git
-cd REPO
+git clone https://github.com/shriyansh-mishra/smartshop
+cd smartshop
 ```
 
-Setup
+🔎 Sample queries and JSON output
 
-```bash
-python -m venv .venv
-. .venv/bin/activate  # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-echo "DJANGO_SECRET_KEY=dev-secret\nDEBUG=true\nSERPAPI_API_KEY=your_serpapi_key_here" > .env
-python manage.py migrate
-python manage.py runserver
+Success
+
+```text
+q=365 WholeFoods Peanut Butter
 ```
 
-Use the API
-
-```bash
-curl "http://127.0.0.1:8000/api/search/?q=365%20WholeFoods%20Peanut%20Butter"
+```json
+{
+  "query": "365 WholeFoods Peanut Butter",
+  "cached": false,
+  "results": [
+    {
+      "name": "365 by Whole Foods Market, Organic Peanut Butter, 16 oz",
+      "price": "$4.99",
+      "vendor": "Whole Foods",
+      "link": "https://example.com/product/1",
+      "weight": "16 oz"
+    }
+  ]
+}
 ```
 
-If you see empty results, verify your `SERPAPI_API_KEY` has quota and works by calling SerpAPI directly with your key.
+Error (missing query param `q`)
 
-Open in Postman
+Request without `q`:
+
+```text
+/api/search/
+```
+
+Response (HTTP 400):
+
+```json
+{
+  "error": "query param 'q' is required"
+}
+```
+
+📬 Open in Postman
 
 - Direct link (replace with your public Postman collection link):
   - https://www.postman.com/collections/YOUR_COLLECTION_UID
 - Or create a simple GET request to:
   - `http://127.0.0.1:8000/api/search/?q=365%20WholeFoods%20Peanut%20Butter`
+
+🤝 Contributing
+
+1) Fork the repo and create a feature branch.
+2) Keep changes focused and documented in the PR description.
+3) Run the app locally and verify the `/api/search` endpoint works.
+4) Submit a PR; include screenshots or sample responses if UI/data changes.
+
+Nice-to-have guidelines:
+- Add or update tests if logic changes.
+- Keep README snippets runnable.
+- Avoid committing databases or secrets.
+
+Made with ❤️ [mishrashriyansh@outlook.com](mailto:mishrashriyansh@outlook.com)
 
 
