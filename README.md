@@ -17,6 +17,11 @@ Simple Django API that searches Google Shopping via SerpAPI (with HTML scraping 
 git clone https://github.com/shriyansh-mishra/smartshop
 cd smartshop
 ```
+### ⚠️ Caution 
+
+```code
+Some products weight will show null, the data likely doesn't include size.
+```
 
 🔎 Sample queries and JSON output
 
