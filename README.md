@@ -1,4 +1,4 @@
-🛍️ Smart Shop API 
+## 🛍️ Smart Shop API 
 
 [![Python](https://img.shields.io/badge/Python-3.12+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![Django](https://img.shields.io/badge/Django-5.x-092E20?logo=django&logoColor=white)](https://www.djangoproject.com/)
@@ -63,7 +63,7 @@ Response (HTTP 400):
 ```
 
 - Create a simple GET request to:
-  - `https://smartshop-kzgm.onrender.com/api/search/?q=365+WholeFoods+Peanut+Butter`
+  - `https://smartshop-kzgm.onrender.com/api/search/?q=365+WholeFoods+Peanut+Butter` 
 
 🤝 Contributing
 
@@ -78,3 +78,4 @@ Nice-to-have guidelines:
 - Avoid committing databases or secrets.
 
 Made with ❤️ [mishrashriyansh@outlook.com](mailto:mishrashriyansh@outlook.com)
+> Streamlit UI for api response comming soon!!!
