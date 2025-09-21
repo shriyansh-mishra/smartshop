@@ -11,6 +11,12 @@
 
 Simple Django API that searches Google Shopping via SerpAPI (with HTML scraping fallback). Returns product name, price, vendor, link, and a best‑effort weight extracted from the title.
 
+### *Demo Video 👇🏻*
+<a href="https://www.loom.com/share/378f034f354e4b0ab77da24a13bc7b46?sid=bc9e431f-4fe9-4ba6-8b8e-3bbfd88d375d">
+  <img src="https://tse3.mm.bing.net/th/id/OIP.1KSc1AX282HhOEkQdkws3QHaCS?w=1217&h=375&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Loom" width="90"/>
+</a>
+
+>
 ⬇️ Clone
 
 ```bash
