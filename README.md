@@ -21,6 +21,7 @@ cd smartshop
 
 ```code
 Some products weight will show null, the data likely doesn't include size.
+The request may take 15-30 sec as of cold start.
 ```
 
 🔎 Sample queries and JSON output
